@@ -1,0 +1,205 @@
+body {
+    margin: 0;
+}
+
+header {
+    background-color: aliceblue;
+    width: 100vw;
+    padding: 10px;
+    margin: 0;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 20;
+    background: transparent;
+    backdrop-filter: blur(6px);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+ul {
+    display: inline-block;
+
+}
+nav ul li {
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+}
+
+a:hold {
+    text-decoration: none;
+}
+
+.logo {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 10px;
+}
+
+.logo img {
+    width: 90px;
+    border-radius: 50%;
+}
+
+.holder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 10000000;  
+    background-color: whitesmoke;
+    top: 20%;
+    height: 80vh;
+    width: 100vw;
+}
+
+#preholder-div {
+    background-size: 500px;
+    height: 90vh;
+    width: 100vw;
+    z-index: 9999999;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#preloader-gif {
+    background: url("assets/leb_preload.gif");
+    background-size: 500px;
+    height: 350px;
+    width: 500px;
+    z-index: 10000000;
+    position: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(assets/hero.jpg);
+    background-size: 100vw 100vh;
+    height: 100vh;
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    background-color: aliceblue;
+}
+
+.title {
+    font-size: 55px;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.carousel_general_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carousel_container {
+    perspective: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 80vw;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel_items {
+    width: 300px;
+    height: 100px;
+    background: linear-gradient(45deg, #ff7e5f, #feb47b);
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 100px;
+    border-radius: 40px;
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(0deg) translateZ(300px);
+}
+
+
+.carousel_items:nth-child(1) {
+    transform: rotateY(0deg) translateZ(300px);
+}
+.carousel_items:nth-child(2) {
+    transform: rotateY(90deg) translateZ(300px);
+}
+.carousel_items:nth-child(3) {
+    transform: rotateY(180deg) translateZ(300px);
+}
+.carousel_items:nth-child(4) {
+    transform: rotateY(270deg) translateZ(300px);
+}
+
+.hotel {
+    background-image: url(assets/hotel_logo.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: black;
+}
+
+.market {
+    background-image: url(assets/market_logo.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.station {
+    background-image: url(assets/station_logo.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.leb-tour {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    size: 100vh 100vw;
+    background-repeat: no-repeat;
+    padding-bottom: 20px;
+}
