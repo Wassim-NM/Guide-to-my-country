@@ -442,31 +442,24 @@ button:hover {
     flex-direction: column;
     position: relative;
     z-index: 1;
-    flex: 3;
     margin: 0;
-    float: left;
     gap: 20px;
     justify-content: center;
-    width: 75%;
+    align-items: center;
 }
 
 .cites {
     display: grid;
-    grid-template-columns: repeat(1, minmax(90vw, 0fr));
     gap: 10px;
     border-radius: 20px;
     height: 100%;
     position: relative;
     padding: 10px;
-    width: 180px;
+    width: 95%;
 }
 
 .cites_items {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-align: center;
-    justify-content: space-between;
+    display: inline-flex;
     background-color: rgba(0, 0, 0, 0.9);
     border-radius: 16px;
     margin-bottom: 20px;
@@ -476,26 +469,43 @@ button:hover {
 
 .cites_items:hover {
     cursor: pointer;
-    transform: scale(1.07);
+    transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .city {
-    background-size: 100%;
+    display: flex;
+    border: none;
+    border-radius: 16px;
+    width: 50%;
+    height: 100%;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    font-style: oblique;
+    justify-content: space-around;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 50%;
+    height: 100%;
+    margin: 10px;
+}
+
+.cites_image {
+    width: 100%;
+    height: 100%;
     border: none;
     border-top-left-radius: 16px;
     border-bottom-left-radius: 16px;
 }
 
-.description {
-
-}
-
-.beirut {
-    background-image: url("assets/beirut_photo.jpg");
-}
-
-#image {
-    width: 100%;
-    height: 100%;
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.97);
+    height: 50px;
+    color: rgba(255, 255, 255, 0.97);
 }
