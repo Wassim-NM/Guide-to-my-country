@@ -4,7 +4,6 @@ function hidePreloader(){
     document.getElementById("preholder-div").style.display = 'none';
 }
 
-// Select the carousel element
 const carousel = document.querySelector('.carousel');
 
 let isDragging = false;
@@ -37,7 +36,6 @@ carousel.addEventListener('mouseleave', () => {
     isDragging = false;
 });
 
-// For touch devices
 carousel.addEventListener('touchstart', (event) => {
     startX = event.touches[0].clientX;
 });
@@ -57,7 +55,6 @@ carousel.addEventListener('touchend', () => {
     isDragging = false;
 });
 
-// Function to rotate the carousel
 function rotateCarousel(degrees) {
     currentRotation += degrees;
     carousel.style.transform = `rotateY(${currentRotation}deg)`;

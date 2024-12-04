@@ -188,11 +188,47 @@ main {
     background-repeat: no-repeat;
 }
 
+.market p{
+    top: 20%;
+}
+
 .station {
     background-image: url(assets/station_logo.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
+
+.restaurant {
+    background-image: url(assets/restaurant_logo.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.arr {
+    display: relative;
+    align-items: center;
+    font-size: 40px;
+    border: none;
+    width: 30px;
+    color: white;
+    background-color: white;
+    transition: 0.4s ease;
+}
+
+button:hover {
+    display: block;
+    height: 200px;
+    width: 30px;
+    border: none;
+    color: black;
+    background-color: rgba(0, 0, 0, 0.035);
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.prev {
+    transform: rotate(180deg);
+}
+
 
 .leb-tour {
     display: flex;
@@ -202,4 +238,264 @@ main {
     size: 100vh 100vw;
     background-repeat: no-repeat;
     padding-bottom: 20px;
+}
+
+.main {
+    padding-top: 110px;
+}
+
+.atra-a {
+    color: black;
+}
+
+.atra_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.atra_holder {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+    flex: 3;
+    margin: 0;
+    float: left;
+    gap: 20px;
+    justify-content: center;
+    width: 75%;
+}
+
+.atraction {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(150px, 4fr));
+    gap: 10px;
+    border-radius: 20px;
+    height: 100%;
+    position: relative;
+    padding: 10px;
+    width: 180px;
+}
+
+.atrac_items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 16px;
+    height: 300px;
+    color: white;
+}
+
+.atrac_items:hover {
+    cursor: pointer;
+    transform: scale(1.07);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.photo_holder {
+    border: none;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+.zaitounaBay {
+    background-image: url(assets/zaitounaBay_photo.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 70%;
+    margin-bottom: 10px;
+}
+
+.title_holder {
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.jeitaGrotto {
+    background-image: url(assets/jeita_grotto_photo.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 70%;
+    margin-bottom: 10px;
+}
+
+.al_raouche {
+    background-image: url(assets/al_raouche_rocks_photo.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 70%;
+    margin-bottom: 10px;
+}
+
+.godCedar{
+    background-image: url(assets/cedar_of_god_photo.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 70%;
+    margin-bottom: 10px;
+}
+
+.jounieh {
+    background-image: url(assets/jounieh_photo.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 70%;
+    margin-bottom: 10px;
+}
+
+.barouk{
+    background-image: url(assets/Barouk_Nature_Reserve_photo.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 70%;
+    margin-bottom: 10px;
+}
+
+.niha {
+    background-image: url(assets/Niha_castle_photo.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 70%;
+    margin-bottom: 10px;
+}
+
+.tripoli {
+    background-image: url(assets/Tripoli_photo.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 70%;
+    margin-bottom: 10px;
+}
+
+.ain_wazein {
+    background-image: url(assets/Ain_wazein_grotto_photo.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 70%;
+    margin-bottom: 10px;
+}
+
+
+.beiteddine {
+    background-image: url(assets/Beiteddine_palace_phto.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 70%;
+    margin-bottom: 10px;
+}
+
+.aichti {
+    background-image: url(assets/Aichti_foundation_photo.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 70%;
+    margin-bottom: 10px;
+}
+
+.baalbek {
+    background-image: url(assets/Baalbek_photo.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 70%;
+    margin-bottom: 10px;
+}
+
+.info_holder {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    position: relative;
+    z-index: 1;
+    flex: 1;
+    padding: 10px;
+    width: 25%;
+}
+
+.atra_holder, .info_holder {
+    width: 100%;
+}
+
+
+.cites_holder {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+    flex: 3;
+    margin: 0;
+    float: left;
+    gap: 20px;
+    justify-content: center;
+    width: 75%;
+}
+
+.cites {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(90vw, 0fr));
+    gap: 10px;
+    border-radius: 20px;
+    height: 100%;
+    position: relative;
+    padding: 10px;
+    width: 180px;
+}
+
+.cites_items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 16px;
+    margin-bottom: 20px;
+    height: 300px;
+    color: white;
+}
+
+.cites_items:hover {
+    cursor: pointer;
+    transform: scale(1.07);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.city {
+    background-size: 100%;
+    border: none;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+
+.description {
+
+}
+
+.beirut {
+    background-image: url("assets/beirut_photo.jpg");
+}
+
+#image {
+    width: 100%;
+    height: 100%;
 }
