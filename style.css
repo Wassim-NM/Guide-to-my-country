@@ -250,8 +250,8 @@ button:hover {
 
 .atra_info {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     gap: 20px;
 }
@@ -267,18 +267,18 @@ button:hover {
     float: left;
     gap: 20px;
     justify-content: center;
-    width: 75%;
+    width: 100%;
 }
 
 .atraction {
     display: grid;
-    grid-template-columns: repeat(4, minmax(150px, 4fr));
+    grid-template-columns: repeat(4, minmax(100%, 4fr));
     gap: 10px;
     border-radius: 20px;
     height: 100%;
     position: relative;
     padding: 10px;
-    width: 180px;
+    width: 25%;
 }
 
 .atrac_items {
@@ -431,11 +431,6 @@ button:hover {
     width: 25%;
 }
 
-.atra_holder, .info_holder {
-    width: 100%;
-}
-
-
 .cites_holder {
     display: flex;
     flex-wrap: wrap;
@@ -509,3 +504,4 @@ footer {
     height: 50px;
     color: rgba(255, 255, 255, 0.97);
 }
+
